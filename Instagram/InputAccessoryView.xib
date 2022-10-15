@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputAccessoryView" customModule="Instagram" customModuleProvider="target">
+            <connections>
+                <outlet property="sendButton" destination="1bp-dL-exA" id="3J7-0E-rai"/>
+                <outlet property="textView" destination="poD-TH-wVR" id="wbx-2L-Kry"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="588" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poD-TH-wVR">
+                    <rect key="frame" x="10" y="10" width="136" height="54"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <attributedString key="attributedText">
+                        <fragment content="コメントが入ります">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" metaFont="system" size="14"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bp-dL-exA">
+                    <rect key="frame" x="511" y="21.5" width="67" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1bp-dL-exA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1zo-Q4-Uld"/>
+                <constraint firstItem="poD-TH-wVR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="EKY-XH-oZM"/>
+                <constraint firstItem="1bp-dL-exA" firstAttribute="leading" secondItem="poD-TH-wVR" secondAttribute="trailing" constant="10" id="MMa-yB-gae"/>
+                <constraint firstAttribute="bottom" secondItem="poD-TH-wVR" secondAttribute="bottom" constant="10" id="eRp-70-K4p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1bp-dL-exA" secondAttribute="trailing" constant="10" id="rNd-pn-VWE"/>
+                <constraint firstItem="poD-TH-wVR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="vjF-6F-Pwk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="-149.33035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
